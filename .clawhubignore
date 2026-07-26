@@ -1,0 +1,53 @@
+# ClawHub publish 不读 .gitignore，必须用 .clawhubignore 显式排除
+# 源自 skill-publisher 规则 10（2026-07-12 凭证泄露事故）
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== 构建产物 =====
+build/
+dist/
+*.egg-info/
+*.egg
+
+# ===== 虚拟环境 =====
+venv/
+env/
+.venv/
+.env
+
+# ===== 临时文件 =====
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===== 审计/调试产物 =====
+.audit-report.md
+output/
+saved/
+*.log
+logs/
+
+# ===== 大文件（通过 Release Assets 分发，不发布到 ClawHub）=====
+references/nvidia_regression.html
+references/amd_regression.html
+references/nvidia_images.json
+
+# ===== 本地配置 =====
+.env.local
+.env.*.local
+config.local.json
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
