@@ -1,0 +1,70 @@
+# 一个公司一张纸 (one-paper-company) .gitignore
+
+# ===== 临时文件 =====
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Python 缓存 =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== 虚拟环境 =====
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.atom/
+.brackets.json
+
+# ===== 项目特定大文件（references/ 下的 HTML 产物和 base64 图片）=====
+# 这些文件体积过大，不应提交到 GitHub，README 提供下载链接
+references/nvidia_regression.html
+references/amd_regression.html
+references/nvidia_images.json
+
+# ===== ECharts 库（1MB，通过 release assets 分发）=====
+# template/echarts.5.5.0.min.js
+
+# ===== 审计报告和临时输出 =====
+.audit-report.md
+output/
+saved/
+
+# ===== 日志 =====
+*.log
+logs/
+
+# ===== 本地配置 =====
+.env.local
+.env.*.local
+config.local.json
