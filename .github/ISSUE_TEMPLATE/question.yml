@@ -1,0 +1,20 @@
+---
+name: Question
+about: Ask a question about this project
+title: "[QUESTION] "
+labels: question
+assignees: ''
+---
+
+## Question
+
+A clear and concise description of your question.
+
+## Context
+
+What are you trying to achieve? What have you tried so far?
+
+## Environment
+
+- OS: [e.g., Windows 11]
+- Skill version: [e.g., v2.0.0]
